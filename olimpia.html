@@ -1,0 +1,45 @@
+﻿<html>
+
+	<head>
+	</head>
+
+	<body>
+	
+		<form action=olimpia.php method=post>
+	
+			<p> <h2>1. Listázzuk ki az aranyérmes úszókat. </h2> </p>
+			<p> <input type=submit name=a1 value=1> </p>
+			
+			<p> <h2> 2. Listázzuk egy adott sportág aranyérmeseit. </h2> </p>
+			<p> Sportág <input type=text name=a2> <input type=submit name=a3 value=2>  </p>
+			
+			<p> <h2> 3. Listázzuk ki a Kajak-kenu sportág nemek szerint választott versenyszámait. </h2> </p>
+			<p> választott nem: ferfi <input type=radio name=a4> nő <input type=radio name=a4> <input type=submit name=a5 value=3> </p>
+			
+			<p> <h2> 4. Listázzuk ki az adott éremtípusokkal rendelkező országokat. </h2> </p>
+			<p> Érem:</p>
+			<p> arany <input type=checkbox name=a6 value=1> ezüst <input type=checkbox name=a6 value=2> bronz <input type=checkbox name=a6 value=3>
+				<input type=submit name=a7 value=4>
+			</p>
+			
+			<p> <h2> 5. Egy billentyűzetről magadott ország estén növeljük 1-el egy legördülő listából kiválasztott érem számát. </h2> </p>
+			<p> Ország: <input type=text name=a8> </p>
+			<p> érem típus: 
+				<select name=a10>
+					<option value=arany> arany
+					<option value=ezüst> ezüst
+					<option value=bronz> bronz
+				</select>
+				<input type=submit name=a9 value=5>
+			</p>
+			
+			<p> <h2> 6.Listázzuk ki az országokat.</h2> </p>
+			<p> kiírás: <input type=submit name=a11 value=6> </p>
+			
+			<p> <h2>7.Töröljük azokat az országokat, amelyeknek nincs egyetlen érmük sem.</h2> </p>
+			<p> Törlés: <input type=submit name=a13 value=7> </p>
+		</form>
+	
+	</body>
+
+</html>
