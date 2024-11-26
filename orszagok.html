@@ -1,0 +1,67 @@
+﻿<html>
+
+	<head>
+	
+	</head>
+	
+	<body>
+	
+		<form action=orszagok.php method=post>
+			
+			<p> <h2>1. Listázd ki egy kiválasztott kontinens országait betűrendben a megfelelő fővárossal</h2> </p>
+			<p>Földrészek: 
+				<select name=a2>
+					<option name=a2 value=Európa> Európa
+					<option name=a2 value=Amerika> Amerika
+					<option name=a2 value=Oceánia> Oceánia
+					<option name=a2 value=Ázsia> Ázsia
+					<option name=a2 value=Afrika> Afrika
+					<option name=a2 value=Ausztrália> Ausztrália
+				</select>
+				<input type=submit name=a1 value=1>
+			</p>
+			
+			<p> <h2>2.Írasd ki egy adott ország területét! </h2> </p>
+			<p> Ország: <input type=text name=a4> <input type=submit name=a3 value=2> </p>
+			
+			<p> <h2>3.Listázd ki a különböző államformákat </h2> </p>
+			<p>  <input type=submit name=a5 value=3> </p>
+			
+			<p> <h2>4.Listázd ki egy kiválasztott államformájú országokat </h2> </p>
+			<p>  
+				monarchia	<input type=radio name=a6 value=monarchia> 
+				köztársaság	<input type=radio name=a6 value=köztársaság> 
+				hercegség	<input type=radio name=a6 value=hercegség> 
+				szövetség	<input type=radio name=a6 value=szövetség> 
+				királyság	<input type=radio name=a6 value=királyság> 
+				sejkség		<input type=radio name=a6 value=sejkség> 
+				szultanátus	<input type=radio name=a6 value=szultanátus>  
+				
+				<input type=submit name=a7 value=4>
+			</p>
+			
+			<p> 
+				<h2>5.Listázd ki a kiválasztott földrajzi helyen vagy helyeken található országokat! </h2> 
+				
+				félsziget 		<input type=checkbox name=a8 value=félsziget> 
+				szigetország 	<input type=checkbox name=b8 value=szigetország>
+				törpeállam 		<input type=checkbox name=c8 value=törpeállam>
+				városállam 		<input type=checkbox name=d8 value=városállam>
+				
+				<input type=submit name=a9 value=5>
+			</p>
+			
+			<p> <h2>6.Írassuk ki azokat az országokat, amelyek népsűrűsége a kiválasztott érték alatt van! </h2> </p>
+			<p> 
+				<input type=range name=a10 min=1 max=200>
+				<input type=submit name=a11 value=6>
+			</p>
+			
+			<p> <h2>7.Módosítsuk egy adott ország GDP-jét, növeljük meg 1 százalékkal! </h2> </p>
+			<p> Ország: <input type=text name=a12> <input type=submit name=a13 value=7> </p>
+			
+		</form>
+	
+	</body>
+
+</html>
