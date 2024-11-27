@@ -7,10 +7,10 @@
 	{
 		$foldresz=$_POST['a2'];
 		
-		$sql=mysqli_query($a,"SELECT orszag AS nev FROM `orszagok` WHERE foldr_hely LIKE '%$foldresz%' ORDER BY orszag ASC;");
+		$sql=mysqli_query($a,"SELECT orszag AS nev,fovaros AS nev2 FROM `orszagok` WHERE foldr_hely LIKE '%$foldresz%' ORDER BY orszag ASC;");
 		
 		while($sor=mysqli_fetch_array($sql))
-			echo $sor['nev']."<br>";
+			echo $sor['nev'].$sor['nev2']."<br>";
 		
 	}
 	
