@@ -1,0 +1,52 @@
+﻿<html>
+	
+	<head>
+	</head>
+	
+	<body>
+		<h1> Csöpi-Filmek </h1>
+		<p> <b> A Bujtor István nevével fémjelzett Csöpi-filmek mind a mai napig népszerűek. Ez a feladat az elkészült hét Csöpi-film adatait dolgozza fel. A szükséges adatok megtalálhatók a film.txt, a stab.txt és a szereplo.txt állományokban.  </b> </p>
+	
+		<form action="film.php" method=post>
+			
+			<p>1. Néhány szereplő a filmekben önmagát játszotta, vagyis a színész neve és a szerep azonosak. Listázza lekérdezés segítségével ezeket a színészeket! Csak a színész neve jelenjen meg!</p>
+			<p><input type=submit name=a1 value=1></p>
+			
+			<p>2. A legtöbb szereplő a Hamis a baba című filmben játszott. Írasd ki betűrendben azoknak a filmeknek a címét és a szereplőinek a számát, amelyekben kevesebb szereplő játszott, mint a kiválasztott érték!</p>
+			<p><input type=range min=0 max=50 name=a2><input type=submit name=a3 value=2></p>
+
+			<p>3. Adja meg lekérdezéssel, hogy a listából kiválasztott című filmben mely színészek szerepeltek és milyen szerepet játszottak! A lekérdezésben más mező ne jelenjen meg!</p>
+			<p>
+				<select name=a4>
+					<option name=a4 value="A Pogány Madonna">A Pogány Madonna
+					<option name=a4 value="Az elvarázsolt dollár">Az elvarázsolt dollár
+					<option name=a4 value="Csak semmi pánik">Csak semmi pánik
+					<option name=a4 value="Hamis a baba">Hamis a baba
+					<option name=a4 value="Zsaruvér és Csigavér 1: A királyné nyakéke">Zsaruvér és Csigavér 1: A királyné nyakéke
+					<option name=a4 value="Zsaruvér és Csigavér 2: Több tonna kámfor">Zsaruvér és Csigavér 2: Több tonna kámfor
+					<option name=a4 value="Zsaruvér és Csigavér 3: A szerencse fia">Zsaruvér és Csigavér 3: A szerencse fia
+				</select>
+				<input type=submit name=a5 value=3>
+			</p>
+			
+			<p>4. Néhány színész több, volt, aki mind a hét Csöpi-filmben szerepelt, és mindig ugyanazt a szerepet játszotta. Adja meg lekérdezés segítségével a színészeknek a nevét és az általuk alakított szerepet!</p>
+			<p>1<input type=radio name=a6>2<input type=radio name=a6>3<input type=radio name=a6>4<input type=radio name=a6>5<input type=radio name=a6>6<input type=radio name=a6>7<input type=radio name=a6><input type=submit name=a7 value=4></p>
+			
+			<p>5. Voltak színészek, akik több Csöpi-filmben is játszottak. Lekérdezés segítségével jelenítse meg azoknak a filmeknek a címét, amelyekben együtt játszottak a kiválasztott színészek!</p>
+			<p>
+				<input type=checkbox name=a8>Avar István
+				<input type=checkbox name=b8>Gór Nagy Mária
+				<input type=checkbox name=c8>Kállai Ferenc
+				<input type=checkbox name=d8>Karácsonyi Melinda
+				<input type=checkbox name=e8>Kari Györgyi
+				<input type=checkbox name=f8>Konrád Antal
+				<input type=checkbox name=g8>Szabó Géza
+				<input type=checkbox name=h8>Szilágyi István
+				<input type=checkbox name=i8>Zenthe Ferenc
+				<input type=submit name=a9 value=5>
+			</p>
+		</form>
+		
+	</body>
+	
+</html>
